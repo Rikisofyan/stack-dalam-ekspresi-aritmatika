@@ -78,7 +78,7 @@ int EvaluatePostfix(string expression)
 	return S.top();
 }
 
-// Fungsi untuk memverifikasi apakah karakter adalah digit numerik.
+// Fungsi untuk memverifikasi apakah karakter merupakan digit numerik atau bukan.
 bool IsNumericDigit(char C) 
 {
 	if(C >= '0' && C <= '9') return true;
