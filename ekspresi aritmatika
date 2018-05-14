@@ -24,11 +24,7 @@ bool IsNumericDigit(char C);
 
 int main() 
 {
-	string expression; 
-	cout<<"Enter Postfix Expression \n";
-	getline(cin,expression);
-	int result = EvaluatePostfix(expression);
-	cout<<"Output = "<<result<<"\n";
+
 }
 
 // Fungsi untuk mengevaluasi ekspresi Postfix dan output kembali
