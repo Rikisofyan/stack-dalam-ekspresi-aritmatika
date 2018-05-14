@@ -10,14 +10,6 @@
 
 using namespace std;
 
-// Fungsi untuk mengevaluasi ekspresi Postfix dan output kembali
-int EvaluatePostfix(string expression);
-
-// Fungsi untuk melakukan operasi dan mengembalikan output.
-int PerformOperation(char operation, int operand1, int operand2);
-
-
-
 int main() 
 {
 	string expression; 
