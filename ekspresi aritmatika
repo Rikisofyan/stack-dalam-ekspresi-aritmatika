@@ -9,6 +9,17 @@
 #include<string>
 
 using namespace std;
+// Fungsi untuk mengevaluasi ekspresi Postfix dan output kembali
+int EvaluatePostfix(string expression);
+
+// Fungsi untuk melakukan operasi dan mengembalikan output.
+int PerformOperation(char operation, int operand1, int operand2);
+
+// Fungsi untuk memverifikasi apakah karakter adalah simbol operator atau bukan. 
+bool IsOperator(char C);
+
+// Fungsi untuk memverifikasi apakah karakter adalah digit numerik.
+bool IsNumericDigit(char C);
 
 int main() 
 {
