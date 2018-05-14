@@ -24,7 +24,11 @@ bool IsNumericDigit(char C);
 
 int main() 
 {
-
+	string expression; 
+	cout<<"Enter Postfix Expression \n";
+	getline(cin,expression);
+	int result = EvaluatePostfix(expression);
+	cout<<"Output = "<<result<<"\n";
 }
 
 // Fungsi untuk mengevaluasi ekspresi Postfix dan output kembali
@@ -39,8 +43,8 @@ int EvaluatePostfix(string expression)
        // Jika karakter adalah pemisah, maka akan di lanjutkan.
 		if(expression[i] == ' ' || expression[i] == ',') continue; 
 
-	
-// Jika karakter adalah operator, letup dua elemen dari tumpukan, lakukan operasi dan dorong hasilnya kembali.
+
+// Jika karakter merupakan operator, dipecah dari dua elemen dari tumpukan,saat dilakukan operasi dan kemudian dorong hasilnya kembali.
 		else if(IsOperator(expression[i])) {
 			// Pop dua operan. 
 			int operand2 = S.top(); S.pop();
